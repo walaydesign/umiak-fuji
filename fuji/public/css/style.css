@@ -698,6 +698,10 @@ ul {
   padding: 12px 20px;
 }
 
+.header-nav-second a.active {
+  color: #0074b6;
+}
+
 .header-menu {
   width: 30px;
   height: 28px;
@@ -2159,6 +2163,7 @@ ul {
 
 .product-detail {
   padding: 140px 0 80px;
+  margin-bottom: 60px;
 }
 
 .product-detail .row {
@@ -2167,6 +2172,10 @@ ul {
 
 .product-detail .row > div {
   padding: 0;
+}
+
+.product-detail .row .btn {
+  margin: 8px 0;
 }
 
 .product-detail__pic {
@@ -2329,6 +2338,9 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .product-detail {
+    margin-bottom: 0;
+  }
   .product-detail__text .btn {
     margin-bottom: 12px;
   }
@@ -2356,6 +2368,9 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 12px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .product-detail-back::after {
     top: inherit;

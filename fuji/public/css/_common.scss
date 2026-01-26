@@ -688,6 +688,9 @@ ul {
       padding: 12px 0;
       a {
         padding: 12px 20px;
+        &.active {
+          color: $primary-600;
+        }
       }
     }
   }

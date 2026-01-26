@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?63e6y1');
-  src:  url('fonts/icomoon.eot?63e6y1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?63e6y1') format('truetype'),
-    url('fonts/icomoon.woff?63e6y1') format('woff'),
-    url('fonts/icomoon.svg?63e6y1#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?cxkagn');
+  src:  url('fonts/icomoon.eot?cxkagn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cxkagn') format('truetype'),
+    url('fonts/icomoon.woff?cxkagn') format('woff'),
+    url('fonts/icomoon.svg?cxkagn#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,55 +25,59 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-download:before {
-  content: "\e904";
-  color: #fff;
-}
-.icon-book:before {
-  content: "\e90b";
-  color: #fff;
-}
-.icon-size:before {
-  content: "\e90c";
-  color: #fff;
-}
-.icon-arrow-top:before {
-  content: "\e90a";
-  color: #a1d6f4;
-}
-.icon-arrow-left:before {
+.icon-price:before {
   content: "\e900";
   color: #fff;
 }
-.icon-address:before {
+.icon-arrow-left:before {
   content: "\e901";
   color: #fff;
 }
-.icon-arrow-right:before {
+.icon-arrow-top:before {
   content: "\e902";
-  color: #fff;
-}
-.icon-arrow:before {
-  content: "\e903";
   color: #a1d6f4;
 }
-.icon-fax:before {
+.icon-book:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-size:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-address:before {
   content: "\e905";
   color: #fff;
 }
-.icon-mail:before {
+.icon-arrow-right:before {
   content: "\e906";
   color: #fff;
 }
-.icon-phone:before {
+.icon-arrow:before {
   content: "\e907";
-  color: #fff;
+  color: #a1d6f4;
 }
-.icon-search:before {
+.icon-download:before {
   content: "\e908";
   color: #fff;
 }
-.icon-x:before {
+.icon-fax:before {
   content: "\e909";
+  color: #fff;
+}
+.icon-mail:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-search:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-x:before {
+  content: "\e90d";
   color: #fff;
 }
