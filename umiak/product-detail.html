@@ -22,57 +22,8 @@
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
-    <div class="header-contact">
-      <div class="container">
-        <div class="header-contact__wrapper">
-          <a href="tel:(02)2393-3283" class="header-contact__item">
-            <span class="icon-phone"></span>
-            <p>(02)2393-3283</p>
-          </a>
-          <a href="mailto:company@umiak.com.tw" class="header-contact__item">
-            <span class="icon-mail"></span>
-            <p>company@umiak.com.tw</p>
-          </a>
-        </div>
-      </div>
-    </div>
-    <header class="header">
-      <div class="header__main">
-        <div class="container">
-          <a href="./index.html" class="header-logo"
-            ><img src="./public/img/logo.png" alt=""
-          /></a>
-          <div class="header-nav">
-            <nav class="header-nav__list">
-              <ul>
-                <li><a href="../fuji/index.html">富士電機產品</a></li>
-                <li><a href="">保護電驛</a></li>
-                <li><a href="">SCADA電控</a></li>
-                <li><a href="./product.html" class="active">Busway匯流排</a></li>
-                <li><a href="./product.html">PLC自動控制</a></li>
-                <li><a href="./about.html">關於我們</a></li>
-              </ul>
-            </nav>
-            <div class="header-searchbar">
-              <div class="header-searchbar__input">
-                <button class="header-searchbar__close">
-                  <span class="icon-x"></span>
-                </button>
-                <input type="text" placeholder="請輸入關鍵字" />
-              </div>
-              <button class="header-searchbar__search">
-                <span class="icon-search"></span>
-              </button>
-            </div>
-          </div>
-          <button class="header-menu d-lg-none">
-            <div class="bar bar-top"></div>
-            <div class="bar bar-middle"></div>
-            <div class="bar bar-bottom"></div>
-          </button>
-        </div>
-      </div>
-    </header>
+    
+    <div id="header"></div>
     <main class="main">
       <div class="product-detail">
         <div class="container">
@@ -129,76 +80,7 @@
         </div>
       </div>
     </main>
-
-    <div class="fixed-btn">
-      <a href="tel:(02)2393-3283"><span class="icon-phone"></span></a>
-      <a class="btn-top"><span class="icon-arrow-top"></span></a>
-    </div>
-    <footer class="footer">
-      <div class="footer__main">
-        <div class="container">
-          <div class="footer-info">
-            <nav class="footer-nav">
-              <ul>
-                <li><a href="">富士電機產品</a></li>
-                <li><a href="">保護電驛</a></li>
-                <li><a href="">SCADA電控</a></li>
-                <li><a href="./product.html">Busway匯流排</a></li>
-                <li><a href="./product.html">PLC自動控制</a></li>
-                <li><a href="./about.html">關於我們</a></li>
-              </ul>
-            </nav>
-            <div class="footer-contact">
-              <div class="footer-contact__wrapper">
-                <div class="footer-contact-item">
-                  <div class="footer-contact-item__icon">
-                    <span class="icon-phone"></span>
-                  </div>
-                  <p>(02)2393-3283 (代表號)</p>
-                </div>
-                <div class="footer-contact-item">
-                  <div class="footer-contact-item__icon">
-                    <span class="icon-mail"></span>
-                  </div>
-                  <p>company@umiak.com.tw</p>
-                </div>
-              </div>
-              <div class="footer-contact__wrapper">
-                <div class="footer-contact-item">
-                  <div class="footer-contact-item__icon">
-                    <span class="icon-fax"></span>
-                  </div>
-                  <p>(02)2391-1552, 2391-1557</p>
-                </div>
-                <div class="footer-contact-item">
-                  <div class="footer-contact-item__icon">
-                    <span class="icon-address"></span>
-                  </div>
-                  <p>
-                    10092 台北市中正區羅斯福路一段7號7樓<br />7th Floor, No.7,
-                    Roosevelt Road Sec. 1, Taipei, Taiwan, R.O.C.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.017155035998!2d121.5154320756026!3d25.03349187781664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a99ee972fd0f%3A0xfb819a6f4630740e!2zMTAw5Y-w54Gj6Ie65YyX5biC5Lit5q2j5Y2A576F5pav56aP6Lev5LiA5q61N-iZnzfmqJM!5e0!3m2!1szh-TW!2suk!4v1767981580999!5m2!1szh-TW!2suk"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="footer__copyright">
-        <p>Copyright © UMIAK 育貿(愈明)股份有限公司 All rights reserved.</p>
-      </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>

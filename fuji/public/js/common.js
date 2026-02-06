@@ -1,4 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
+fetch("header.html")
+  .then((res) => res.text())
+  .then((html) => {
+    document.getElementById("header").innerHTML = html;
+    header();
+    updateHeaderActive();
+  });
+
+fetch("footer.html")
+  .then((res) => res.text())
+  .then((html) => {
+    document.getElementById("footer").innerHTML = html;
+    footer();
+  });
+
+function header() {
   // menu
   document
     .querySelector(".header-menu")
@@ -24,32 +39,34 @@ document.addEventListener("DOMContentLoaded", function () {
     ?.addEventListener("click", function () {
       document.querySelector(".header")?.classList.remove("searching");
     });
-});
 
-document.querySelector(".btn-top")?.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
+  // scroll + resize
+  window.addEventListener("scroll", updateHeaderActive);
+  window.addEventListener("resize", updateHeaderActive);
+}
+
+function footer() {
+  document.querySelector(".btn-top")?.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
-});
+}
 
 function updateHeaderActive() {
+  console.log("updateHeaderActive");
   const header = document.querySelector(".header");
   if (!header) return;
 
-  if (!document.body.classList.contains('no-banner')) {
-  if (window.scrollY > 0) {
-    header.classList.add("scrolldown");
+  if (document.body.classList.contains("no-banner")) {
+      header.classList.add("scrolldown");
+    
   } else {
-    header.classList.remove("scrolldown");
-  }
-
+    if (window.scrollY > 0) {
+      header.classList.add("scrolldown");
+    } else {
+      header.classList.remove("scrolldown");
+    }
   }
 }
-
-// scroll + resize
-window.addEventListener("scroll", updateHeaderActive);
-window.addEventListener("resize", updateHeaderActive);
-
-// 初次執行（避免一開始就在 scroll 狀態但沒套 class）
-updateHeaderActive();
