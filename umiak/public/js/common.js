@@ -60,3 +60,25 @@ function footer() {
     });
   });
 }
+
+window.addEventListener("scroll", function () {
+  const headerContact = document.querySelector(".header-contact");
+  const header = document.querySelector(".header");
+  const main = document.querySelector(".main");
+
+  const contactHeight = headerContact ? headerContact.offsetHeight : 0;
+  const headerHeight = header ? header.offsetHeight : 0;
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop >= contactHeight) {
+    header.classList.add("fixed");
+    main.style.paddingTop = headerHeight + "px";
+  } else {
+    header.classList.remove("fixed");
+    main.style.paddingTop = "0px";
+  }
+});
+
+window.addEventListener("resize", () => {
+  window.dispatchEvent(new Event("scroll"));
+});

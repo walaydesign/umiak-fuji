@@ -362,6 +362,29 @@ ul {
   }
 }
 
+.inner-title {
+  font-size: 44px;
+  font-weight: 700;
+  padding-bottom: 24px;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: $secondary-500;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 36px;
+  }
+}
+
 .input, .textarea {
   background-color: $white-15;
   padding: 16px 20px;
@@ -376,12 +399,10 @@ ul {
   height: 195px;
 }
 
+#header {
+}
+
 .header {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
   .container {
     display: flex;
     align-items: center;
@@ -582,6 +603,14 @@ ul {
         }
       }
     }
+  }
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
   }
   @media screen and (max-width: 1199px) {
     .container {
@@ -860,7 +889,6 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     padding: 0 8px;
-    z-index: 0;
     z-index: 10;
     a {
         display: flex;
@@ -905,8 +933,11 @@ ul {
         z-index: -1;
     }
     @media screen and (max-width: 575px) {
-        right: 16px;
+        right: 12px;
         padding: 0 8px;
+        transform: none;
+        bottom: 40px;
+        top: inherit;
         a {
             width: 40px;
             height: 40px;

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9bmhu1');
-  src:  url('fonts/icomoon.eot?9bmhu1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9bmhu1') format('truetype'),
-    url('fonts/icomoon.woff?9bmhu1') format('woff'),
-    url('fonts/icomoon.svg?9bmhu1#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?m56te6');
+  src:  url('fonts/icomoon.eot?m56te6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?m56te6') format('truetype'),
+    url('fonts/icomoon.woff?m56te6') format('woff'),
+    url('fonts/icomoon.svg?m56te6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,47 +25,99 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-top:before {
-  content: "\e90a";
-  color: #a1d6f4;
-}
-.icon-arrow-left:before {
+.icon-book2:before {
   content: "\e900";
   color: #fff;
 }
-.icon-address:before {
+.icon-chart:before {
   content: "\e901";
   color: #fff;
 }
-.icon-arrow-right:before {
+.icon-chip:before {
   content: "\e902";
   color: #fff;
 }
-.icon-arrow:before {
+.icon-desktop:before {
   content: "\e903";
-  color: #a1d6f4;
+  color: #fff;
 }
-.icon-download:before {
+.icon-layer:before {
   content: "\e904";
   color: #fff;
 }
-.icon-fax:before {
+.icon-lock:before {
   content: "\e905";
   color: #fff;
 }
-.icon-mail:before {
+.icon-plugin:before {
   content: "\e906";
   color: #fff;
 }
-.icon-phone:before {
+.icon-signal:before {
   content: "\e907";
   color: #fff;
 }
-.icon-search:before {
+.icon-structure:before {
   content: "\e908";
   color: #fff;
 }
-.icon-x:before {
+.icon-wave:before {
   content: "\e909";
+  color: #fff;
+}
+.icon-address:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-arrow-left:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-arrow-right:before {
+  content: "\e90c";
+  color: #fff;
+}
+.icon-arrow-top:before {
+  content: "\e90d";
+  color: #a1d6f4;
+}
+.icon-arrow:before {
+  content: "\e90e";
+  color: #a1d6f4;
+}
+.icon-book:before {
+  content: "\e90f";
+  color: #fff;
+}
+.icon-download:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-fax:before {
+  content: "\e911";
+  color: #fff;
+}
+.icon-mail:before {
+  content: "\e912";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-price:before {
+  content: "\e914";
+  color: #fff;
+}
+.icon-search:before {
+  content: "\e915";
+  color: #fff;
+}
+.icon-size:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-x:before {
+  content: "\e917";
   color: #fff;
 }

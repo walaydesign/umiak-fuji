@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>育貿</title>
+    <meta property="og:image" content="./public/img/share.jpg" />
+    <meta property="og:url" content="./public/img/share.jpg" />
+    <meta property="og:image" content="./public/img/share.jpg" />
+    <meta property="og:url" content="./public/img/share.jpg" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/aos/aos.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/icomoon/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="main">
+      <div class="banner">
+        <img class="banner__pic" src="./public/img/banner-product.png" alt="" />
+        <div class="banner-text">
+          <div class="container">
+            <div class="banner-text__wrapper">
+              <p class="banner-text__description">Product</p>
+              <h1 class="banner-text__title">保護電驛</h1>
+            </div>
+            <ul class="breadcrumb">
+              <li><a href="./index.html">首頁</a></li>
+              <li><a class="active">保護電驛</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-card">
+        <div class="slider-card-text">
+          <div class="slider-card-text__title">
+            <h2 class="slider-card-text__en">
+              Selected<br />
+              Products
+            </h2>
+            <h3 class="slider-card-text__ch">精選商品</h3>
+          </div>
+          <div class="slider-card-btns">
+            <button class="slider-card-prev">
+              <span class="icon-arrow-left"></span>
+            </button>
+            <button class="slider-card-next">
+              <span class="icon-arrow-right"></span>
+            </button>
+          </div>
+        </div>
+        <div class="slider-card-main">
+          <div class="swiper-container slider-card-main__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="./product-detail.html" class="slider-card-link">
+                  <h3 class="slider-card-link__title">Emerson獨立式控制器</h3>
+                  <p class="slider-card-link__category">EPSCPE100/115</p>
+                  <div class="slider-card-link__pic">
+                    <img src="./public/img/product.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./product-detail.html" class="slider-card-link">
+                  <h3 class="slider-card-link__title">Emerson獨立式控制器</h3>
+                  <p class="slider-card-link__category">EPSCPE100/115</p>
+                  <div class="slider-card-link__pic">
+                    <img src="./public/img/product.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./product-detail.html" class="slider-card-link">
+                  <h3 class="slider-card-link__title">Emerson獨立式控制器</h3>
+                  <p class="slider-card-link__category">EPSCPE100/115</p>
+                  <div class="slider-card-link__pic">
+                    <img src="./public/img/product.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./product-detail.html" class="slider-card-link">
+                  <h3 class="slider-card-link__title">Emerson獨立式控制器</h3>
+                  <p class="slider-card-link__category">EPSCPE100/115</p>
+                  <div class="slider-card-link__pic">
+                    <img src="./public/img/product.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="./product-detail.html" class="slider-card-link">
+                  <h3 class="slider-card-link__title">Emerson獨立式控制器</h3>
+                  <p class="slider-card-link__category">EPSCPE100/115</p>
+                  <div class="slider-card-link__pic">
+                    <img src="./public/img/product.png" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="protection-product">
+        <div class="container">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="protection"
+                data-bs-toggle="tab"
+                data-bs-target="#protection-pane"
+                type="button"
+                role="tab"
+                aria-controls="protection-pane"
+                aria-selected="true"
+              >
+                保護電驛
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="taiwan-power"
+                data-bs-toggle="tab"
+                data-bs-target="#taiwan-power-pane"
+                type="button"
+                role="tab"
+                aria-controls="taiwan-power-pane"
+                aria-selected="false"
+              >
+                台電專區
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="protection-pane"
+              role="tabpanel"
+              aria-labelledby="protection"
+              tabindex="0"
+            >
+              <div class="protection-product__map">
+                <img src="./public/img/factory.png" alt="" />
+                <div>
+                  <button class="map-btn active" data-product="#transformer">
+                    <div class="map-btn-wrapper">
+                      <div class="map-btn-inner">
+                        <img src="./public/img/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="map-btn-name">變壓器<br />保護系統</p>
+                  </button>
+                  <button class="map-btn" data-product="#busway">
+                    <div class="map-btn-wrapper">
+                      <div class="map-btn-inner">
+                        <img src="./public/img/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="map-btn-name">匯流排<br />保護系統</p>
+                  </button>
+                  <button class="map-btn" data-product="#motor">
+                    <div class="map-btn-wrapper">
+                      <div class="map-btn-inner">
+                        <img src="./public/img/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="map-btn-name">⾺達保護系統</p>
+                  </button>
+                  <button class="map-btn" data-product="#dynamo">
+                    <div class="map-btn-wrapper">
+                      <div class="map-btn-inner">
+                        <img src="./public/img/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="map-btn-name">發電機<br />保護系統</p>
+                  </button>
+                  <button class="map-btn" data-product="#feeder">
+                    <div class="map-btn-wrapper">
+                      <div class="map-btn-inner">
+                        <img src="./public/img/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="map-btn-name">饋線保護系統</p>
+                  </button>
+                  <button class="map-btn" data-product="#internet">
+                    <div class="map-btn-wrapper">
+                      <div class="map-btn-inner">
+                        <img src="./public/img/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="map-btn-name">網路穩定性與<br />同步測量系統</p>
+                  </button>
+                  <button class="map-btn cable-1" data-product="#cable">
+                    <div class="map-btn-wrapper">
+                      <div class="map-btn-inner">
+                        <img src="./public/img/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="map-btn-name">輸電線路<br />保護系統</p>
+                  </button>
+                  <button class="map-btn cable-2" data-product="#cable">
+                    <div class="map-btn-wrapper">
+                      <div class="map-btn-inner">
+                        <img src="./public/img/plus.svg" alt="" />
+                      </div>
+                    </div>
+                    <p class="map-btn-name">輸電線路<br />保護系統</p>
+                  </button>
+                </div>
+              </div>
+              <div class="protection-product-wrapper">
+                <div
+                  class="product-cards protection-product-cards active"
+                  id="transformer"
+                >
+                  <h3 class="protection-product-cards__title">
+                    變壓器保護系統
+                  </h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multilin T35/T60
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">MiCOM P64x</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multinin 845
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-cards protection-product-cards" id="busway">
+                  <h3 class="protection-product-cards__title">
+                    匯流排保護系統
+                  </h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multilin B30/B90
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">MiCOM P74x</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-cards protection-product-cards" id="motor">
+                  <h3 class="protection-product-cards__title">⾺達保護系統</h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            ⾺達保護系統
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">MiCOM P24x</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">MiCOM P24x</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-cards protection-product-cards" id="dynamo">
+                  <h3 class="protection-product-cards__title">
+                    發電機保護系統
+                  </h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multilin G30/G60
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">MiCOM P34x</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multinin 889
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-cards protection-product-cards" id="feeder">
+                  <h3 class="protection-product-cards__title">饋線保護系統</h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multilin F35/F60
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            P40/P94 Agile
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multilin Agile
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">MiCOM P14x</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multinin 850
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="product-cards protection-product-cards"
+                  id="internet"
+                >
+                  <h3 class="protection-product-cards__title">
+                    網路穩定性與同步測量系統
+                  </h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">Reason DR60</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Reason RPV311
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Reason MU320E/MU360
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-cards protection-product-cards" id="cable">
+                  <h3 class="protection-product-cards__title">
+                    輸電線路保護系統
+                  </h3>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multilin L30/L90
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">MiCOM P54x</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">
+                            Multilin D30/D60
+                          </h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-6">
+                      <a
+                        href="./product-detail.html"
+                        class="product-cards-item"
+                      >
+                        <div class="product-cards-item__pic">
+                          <img src="./public/img/product.png" alt="" />
+                        </div>
+                        <div class="product-cards-item__text">
+                          <h3 class="product-cards-item__title">MiCOM P44x</h3>
+                          <div class="product-cards-item-more">
+                            <div class="product-cards-item-more__wrapper">
+                              <p>MORE</p>
+                              <span class="icon-arrow-right"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="taiwan-power-pane"
+              role="tabpanel"
+              aria-labelledby="taiwan-power"
+              tabindex="0"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./public/js/count/noframework.waypoints.min.js"></script>
+    <script src="./public/js/count/countUp.umd.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+    <script>
+      var swiper = new Swiper(".slider-card-main__swiper", {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        slidesPerGroup: 1,
+        navigation: {
+          nextEl: ".slider-card-next",
+          prevEl: ".slider-card-prev",
+        },
+        breakpoints: {
+          567: {
+            slidesPerView: 2.2,
+            slidesPerGroup: 2,
+            spaceBetween: 36,
+          },
+          992: {
+            slidesPerView: 3.2,
+            slidesPerGroup: 3,
+            spaceBetween: 36,
+          },
+        },
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".map-btn").forEach((button) => {
+        button.addEventListener("click", function () {
+          const siblings = this.parentElement.querySelectorAll(".map-btn");
+          siblings.forEach((el) => el.classList.remove("active"));
+          this.classList.add("active");
+
+          const targetId = this.getAttribute("data-product");
+          const targetEl = document.querySelector(targetId);
+
+          if (targetEl) {
+            const contentSiblings = targetEl.parentElement.querySelectorAll(
+              ".protection-product-cards",
+            );
+            contentSiblings.forEach((el) => el.classList.remove("active"));
+            targetEl.classList.add("active");
+          }
+
+          const wrapper = document.querySelector(".protection-product-wrapper");
+          if (wrapper && window.innerWidth > 767) {
+            const listTop =
+              wrapper.getBoundingClientRect().top + window.scrollY - 100;
+
+            setTimeout(() => {
+              window.scrollTo({
+                top: listTop,
+                behavior: "smooth",
+              });
+            }, 300);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
