@@ -1,83 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100..900&display=swap");
 
 $white: #fff;
-$white-15: rgba(255,255,255,0.15);
-$white-30: rgba(255,255,255,0.3);
+$white-15: rgba(255, 255, 255, 0.15);
+$white-30: rgba(255, 255, 255, 0.3);
 $red: #da0000;
 $text: $white;
 
-$primary-50: #F4FBFF;
-$primary-100: #DFF4FF;
-$primary-200: #CCEDFF;
-$primary-300: #A1D6F4;
-$primary-400: #6EB6DF;
-$primary-500: #4099CB;
-$primary-600: #0074B6;
-$primary-700: #005A8D;
-$primary-800: #00466E;
-$primary-900: #002F4A;
+$primary-50: #f4fbff;
+$primary-100: #dff4ff;
+$primary-200: #ccedff;
+$primary-300: #a1d6f4;
+$primary-400: #6eb6df;
+$primary-500: #4099cb;
+$primary-600: #0074b6;
+$primary-700: #005a8d;
+$primary-800: #00466e;
+$primary-900: #002f4a;
 
-
-$secondary-50: #FFFAED;
-$secondary-100: #FFF3D7;
-$secondary-200: #FFE7B1;
-$secondary-300: #FFD679;
-$secondary-400: #FFC53F;
-$secondary-500: #F6AB00;
-$secondary-600: #DB9800;
-$secondary-700: #B88000;
+$secondary-50: #fffaed;
+$secondary-100: #fff3d7;
+$secondary-200: #ffe7b1;
+$secondary-300: #ffd679;
+$secondary-400: #ffc53f;
+$secondary-500: #f6ab00;
+$secondary-600: #db9800;
+$secondary-700: #b88000;
 $secondary-800: #936600;
 $secondary-900: #634500;
 
-$gray-50: #F9F9F9;
-$gray-100: #EEEEEE;
-$gray-200: #E2E2E2;
-$gray-300: #D0D0D0;
-$gray-400: #BDBDBD;
-$gray-500: #AEAEAE;
-$gray-600: #9D9D9D;
+$gray-50: #f9f9f9;
+$gray-100: #eeeeee;
+$gray-200: #e2e2e2;
+$gray-300: #d0d0d0;
+$gray-400: #bdbdbd;
+$gray-500: #aeaeae;
+$gray-600: #9d9d9d;
 $gray-700: #898989;
 $gray-800: #767676;
-$gray-900: #5F5F5F;
-$gray-950: #2C2C2C;
-
+$gray-900: #5f5f5f;
+$gray-950: #2c2c2c;
 
 $font-sans: "noto sans TC";
 $font-kanit: "Kanit", sans-serif;
 
-$heading-1: 700 40px "noto sans TC", sans-serif;
-$heading-2: 700 32px "noto sans TC", sans-serif;
-$heading-3: 700 28px "noto sans TC", sans-serif;
-$heading-4: 700 24px "noto sans TC", sans-serif;
-$heading-5: 700 20px "noto sans TC", sans-serif;
-$heading-6: 700 16px "noto sans TC", sans-serif;
-$heading-7: 700 14px "noto sans TC", sans-serif;
+$heading-1:
+  700 40px "noto sans TC",
+  sans-serif;
+$heading-2:
+  700 32px "noto sans TC",
+  sans-serif;
+$heading-3:
+  700 28px "noto sans TC",
+  sans-serif;
+$heading-4:
+  700 24px "noto sans TC",
+  sans-serif;
+$heading-5:
+  700 20px "noto sans TC",
+  sans-serif;
+$heading-6:
+  700 16px "noto sans TC",
+  sans-serif;
+$heading-7:
+  700 14px "noto sans TC",
+  sans-serif;
 
-$body-1: 400 24px "noto sans TC", sans-serif;
-$body-1-M: 500 24px "noto sans TC", sans-serif;
-$body-2: 400 20px "noto sans TC", sans-serif;
-$body-2-M: 500 20px "noto sans TC", sans-serif;
-$body-3: 400 18px "noto sans TC", sans-serif;
-$body-3-M: 500 18px "noto sans TC", sans-serif;
-$body-4: 400 16px "noto sans TC", sans-serif;
-$body-4-M: 500 16px "noto sans TC", sans-serif;
-$body-5: 400 14px "noto sans TC", sans-serif;
-$body-5-M: 500 14px "noto sans TC", sans-serif;
-$body-6: 400 12px "noto sans TC", sans-serif;
-$body-6-M: 500 12px "noto sans TC", sans-serif;
+$body-1:
+  400 24px "noto sans TC",
+  sans-serif;
+$body-1-M:
+  500 24px "noto sans TC",
+  sans-serif;
+$body-2:
+  400 20px "noto sans TC",
+  sans-serif;
+$body-2-M:
+  500 20px "noto sans TC",
+  sans-serif;
+$body-3:
+  400 18px "noto sans TC",
+  sans-serif;
+$body-3-M:
+  500 18px "noto sans TC",
+  sans-serif;
+$body-4:
+  400 16px "noto sans TC",
+  sans-serif;
+$body-4-M:
+  500 16px "noto sans TC",
+  sans-serif;
+$body-5:
+  400 14px "noto sans TC",
+  sans-serif;
+$body-5-M:
+  500 14px "noto sans TC",
+  sans-serif;
+$body-6:
+  400 12px "noto sans TC",
+  sans-serif;
+$body-6-M:
+  500 12px "noto sans TC",
+  sans-serif;
 
-$kanit-1: 400 24px "Kanit", sans-serif;
-$kanit-1-B: 700 24px "Kanit", sans-serif;
-$kanit-2: 400 20px "Kanit", sans-serif;
-$kanit-2-B: 700 20px "Kanit", sans-serif;
-$kanit-3: 400 18px "Kanit", sans-serif;
-$kanit-3-B: 700 18px "Kanit", sans-serif;
-$kanit-4: 400 16px "Kanit", sans-serif;
-$kanit-4-B: 700 16px "Kanit", sans-serif;
-$kanit-5: 400 14px "Kanit", sans-serif;
-$kanit-5-B: 700 14px "Kanit", sans-serif;
-$kanit-6: 400 12px "Kanit", sans-serif;
-$kanit-6-B: 700 12px "Kanit", sans-serif;
+$kanit-1:
+  400 24px "Kanit",
+  sans-serif;
+$kanit-1-B:
+  700 24px "Kanit",
+  sans-serif;
+$kanit-2:
+  400 20px "Kanit",
+  sans-serif;
+$kanit-2-B:
+  700 20px "Kanit",
+  sans-serif;
+$kanit-3:
+  400 18px "Kanit",
+  sans-serif;
+$kanit-3-B:
+  700 18px "Kanit",
+  sans-serif;
+$kanit-4:
+  400 16px "Kanit",
+  sans-serif;
+$kanit-4-B:
+  700 16px "Kanit",
+  sans-serif;
+$kanit-5:
+  400 14px "Kanit",
+  sans-serif;
+$kanit-5-B:
+  700 14px "Kanit",
+  sans-serif;
+$kanit-6:
+  400 12px "Kanit",
+  sans-serif;
+$kanit-6-B:
+  700 12px "Kanit",
+  sans-serif;
 
 $shadow-text: 0 4px 8px rgba(0, 0, 0, 0.3);
 $shadow-pic: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -85,7 +145,7 @@ $shadow-input: 0 0 30px rgba(0, 116, 182, 0.15);
 $banner-ratio: 30%;
 $banner-ratio-mobile: 100%;
 @mixin product-bg {
-  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
 }
 $transition: 0.3s;
@@ -120,7 +180,8 @@ button {
   color: $text;
 }
 
-input, textarea {
+input,
+textarea {
   &::placeholder {
     color: $white-30;
   }
@@ -147,7 +208,12 @@ main {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
 }
 
@@ -179,7 +245,8 @@ ul {
   margin: 0;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   &::before {
     transition: $transition;
   }
@@ -343,7 +410,7 @@ ul {
   &-en {
     position: absolute;
     font-size: 132px;
-    color: rgba(255,255,255,0.07);
+    color: rgba(255, 255, 255, 0.07);
     margin: 0;
     font-weight: 700;
   }
@@ -354,11 +421,11 @@ ul {
   }
   @media screen and (max-width: 991px) {
     font-size: 36px;
-      &::after {
-        width: 140px;
-        height: 17px;
-        right: -30%;
-      }
+    &::after {
+      width: 140px;
+      height: 17px;
+      right: -30%;
+    }
   }
 }
 
@@ -385,7 +452,8 @@ ul {
   }
 }
 
-.input, .textarea {
+.input,
+.textarea {
   background-color: $white-15;
   padding: 16px 20px;
   width: 100%;
@@ -539,7 +607,7 @@ ul {
     button {
       display: flex;
       align-items: center;
-        justify-content: center;
+      justify-content: center;
     }
     &__input {
       width: 0;
@@ -610,7 +678,6 @@ ul {
     left: 0;
     width: 100%;
     z-index: 100;
-
   }
   @media screen and (max-width: 1199px) {
     .container {
@@ -635,8 +702,9 @@ ul {
         width: 100%;
         transition: $transition;
         right: -450px;
-        top: 80px;
-        height: calc(100vh - 80px);
+        top: 120px;
+        height: calc(100vh - 120px);
+        z-index: 11;
         ul {
           display: block;
           padding: 24px 0;
@@ -686,6 +754,16 @@ ul {
         }
       }
     }
+    &.fixed {
+      .header {
+        &-nav {
+          &__list {
+            top: 80px;
+            height: calc(100vh - 80px);
+          }
+        }
+      }
+    }
   }
   @media screen and (max-width: 575px) {
     &-contact {
@@ -704,8 +782,18 @@ ul {
     }
     &-nav {
       &__list {
-        top: 60px;
-        height: calc(100vh - 60px);
+        top: 92px;
+        height: calc(100vh - 92px);
+      }
+    }
+    &.fixed {
+      .header {
+        &-nav {
+          &__list {
+            top: 60px;
+            height: calc(100vh - 60px);
+          }
+        }
       }
     }
   }
@@ -884,148 +972,148 @@ ul {
 }
 
 .fixed-btn {
-    position: fixed;
-    right: 24px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 8px;
-    z-index: 10;
-    a {
-        display: flex;
-        width: 44px;
-        height: 44px;
-        align-items: center;
-        justify-content: center;
-        margin: 8px 0;
-        position: relative;
-        span {
-            font-size: 20px;
-        }
-        &::after {
-            position: absolute;
-            content: "";
-            width: 34px;
-            height: 1px;
-            background-color: $white-15;
-            left: 50%;
-            bottom: -8px;
-            transform: translateX(-50%);
-        }
-        &:last-child {
-            &::after {
-                display: none;
-            }
-        }
-        &:hover {
-            opacity: 0.6;
-        }
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 8px;
+  z-index: 10;
+  a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+    position: relative;
+    span {
+      font-size: 20px;
     }
     &::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-color: $primary-800;
-        border: 1px solid $white-30;
-        top: 0;
-        left: 0;
-        transform: skewY(15deg);
-        z-index: -1;
+      position: absolute;
+      content: "";
+      width: 34px;
+      height: 1px;
+      background-color: $white-15;
+      left: 50%;
+      bottom: -8px;
+      transform: translateX(-50%);
     }
-    @media screen and (max-width: 575px) {
-        right: 12px;
-        padding: 0 8px;
-        transform: none;
-        bottom: 40px;
-        top: inherit;
-        a {
-            width: 40px;
-            height: 40px;
-        }
+    &:last-child {
+      &::after {
+        display: none;
+      }
     }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $primary-800;
+    border: 1px solid $white-30;
+    top: 0;
+    left: 0;
+    transform: skewY(15deg);
+    z-index: -1;
+  }
+  @media screen and (max-width: 575px) {
+    right: 12px;
+    padding: 0 8px;
+    transform: none;
+    bottom: 40px;
+    top: inherit;
+    a {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 .banner {
-    position: relative;
+  position: relative;
+  width: 100%;
+  padding-bottom: $banner-ratio;
+  &::before {
+    position: absolute;
+    content: "";
     width: 100%;
-    padding-bottom: $banner-ratio;
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      padding-bottom: 10vw;
-      background: linear-gradient(to top, #002F4A 0%, transparent 100%);
-      left: 0;
-      bottom: 0;
-      z-index: 1;
+    padding-bottom: 10vw;
+    background: linear-gradient(to top, #002f4a 0%, transparent 100%);
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__pic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  &-text {
+    position: absolute;
+    bottom: 7vw;
+    color: $white;
+    width: 100%;
+    z-index: 2;
+    &__wrapper {
+      padding-left: 24px;
+      border-left: 4px solid $secondary-500;
     }
-    &__pic {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        top: 0;
-        left: 0;
+    .container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
     }
-    &-text {
-        position: absolute;
-        bottom: 7vw;
-        color: $white;
-        width: 100%;
-        z-index: 2;
-        &__wrapper {
-          padding-left: 24px;
-          border-left: 4px solid $secondary-500;
-        }
-        .container {
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-        }
     &__title {
-        font-size: 64px;
-        margin: 0;
-        font-weight: 700;
-        text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      font-size: 64px;
+      margin: 0;
+      font-weight: 700;
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
     &__description {
-        margin-bottom: 4px;
-        text-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        font-size: 24px;
+      margin-bottom: 4px;
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      font-size: 24px;
     }
+  }
+  @media screen and (max-width: 991px) {
+    padding-bottom: $banner-ratio-mobile;
+    &-text {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+      }
+      &__despcription {
+        font-size: 16px;
+      }
+      &__title {
+        font-size: 44px;
+      }
+      &__wrapper {
+        padding-left: 16px;
+      }
     }
-    @media screen and (max-width: 991px) {
-        padding-bottom: $banner-ratio-mobile;
-        &-text {
-          .container {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 48px;
-          }
-          &__despcription {
-            font-size: 16px;
-          }
-          &__title {
-            font-size: 44px;
-          }
-          &__wrapper {
-            padding-left: 16px;
-          }
-        }
+  }
+  @media screen and (max-width: 575px) {
+    &__text {
+      .btn {
+        padding: 8px 20px;
+      }
     }
-    @media screen and (max-width: 575px) {
-        &__text {
-            .btn {
-                padding: 8px 20px;
-            }
-        }
-        &__title {
-            font-size: 40px;
-        }
-        &__description {
-            font-size: 16px;
-        }
+    &__title {
+      font-size: 40px;
     }
+    &__description {
+      font-size: 16px;
+    }
+  }
 }
 
 .breadcrumb {
@@ -1036,7 +1124,8 @@ ul {
       content: "/";
       padding: 0 4px;
     }
-    &.active, &:hover {
+    &.active,
+    &:hover {
       color: $secondary-500;
     }
   }
@@ -1052,47 +1141,46 @@ ul {
 }
 
 .pagination {
-    margin: 60px auto 0;
+  margin: 60px auto 0;
+  display: flex;
+  width: fit-content;
+  position: relative;
+  z-index: 0;
+  a {
+    width: 36px;
+    height: 38px;
     display: flex;
-    width: fit-content;
-    position: relative;
-    z-index: 0;
-    a {
-        width: 36px;
-        height: 38px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font: $kanit-2;
-        font-weight: 500;
-        &.active {
-            color: $secondary-500;
-        }
-        &:hover {
-            opacity: 0.6;
-        }
+    align-items: center;
+    justify-content: center;
+    font: $kanit-2;
+    font-weight: 500;
+    &.active {
+      color: $secondary-500;
     }
-    >ul {
-        display: flex;
+    &:hover {
+      opacity: 0.6;
     }
-    &_arrow {
-        span {
-            font-size: 16px;
-            &::before {
-                color: $white;
-            }
-        }
+  }
+  > ul {
+    display: flex;
+  }
+  &_arrow {
+    span {
+      font-size: 16px;
+      &::before {
+        color: $white;
+      }
     }
-    &::after {
-      position: absolute;
-      content: "";
-      width: calc(100% + 24px);
-      height: calc(100% + 8px);
-      border: 1px solid $white;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) skewX(-15deg);
-      z-index: -1;
-    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 24px);
+    height: calc(100% + 8px);
+    border: 1px solid $white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skewX(-15deg);
+    z-index: -1;
+  }
 }
-
