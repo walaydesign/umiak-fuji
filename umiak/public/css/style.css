@@ -680,13 +680,13 @@ ul {
     position: fixed;
     background-color: #005A8D;
     right: 0;
-    max-width: 400px;
+    max-width: 450px;
     width: 100%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     right: -450px;
-    top: 120px;
-    height: calc(100vh - 120px);
+    top: 80px;
+    height: calc(100vh - 80px);
   }
   .header-nav__list ul {
     display: block;
@@ -744,8 +744,8 @@ ul {
     height: 60px;
   }
   .header-nav__list {
-    top: 92px;
-    height: calc(100vh - 92px);
+    top: 60px;
+    height: calc(100vh - 60px);
   }
 }
 

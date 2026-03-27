@@ -631,12 +631,12 @@ ul {
         position: fixed;
         background-color: $primary-700;
         right: 0;
-        max-width: 400px;
+        max-width: 450px;
         width: 100%;
         transition: $transition;
         right: -450px;
-        top: 120px;
-        height: calc(100vh - 120px);
+        top: 80px;
+        height: calc(100vh - 80px);
         ul {
           display: block;
           padding: 24px 0;
@@ -704,8 +704,8 @@ ul {
     }
     &-nav {
       &__list {
-        top: 92px;
-        height: calc(100vh - 92px);
+        top: 60px;
+        height: calc(100vh - 60px);
       }
     }
   }
