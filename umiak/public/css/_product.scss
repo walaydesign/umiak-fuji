@@ -842,7 +842,7 @@
 }
 
 .protection-product {
-  padding: 120px 0;
+  padding-bottom: 120px;
   .nav-tabs {
     justify-content: center;
     border-color: $white-30;
@@ -896,7 +896,7 @@
     }
   }
   @media screen and (max-width: 767px) {
-    padding: 60px 0;
+   padding-bottom: 60px;
     .nav-tabs {
       .nav-item {
         width: 50%;
