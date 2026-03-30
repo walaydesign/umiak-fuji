@@ -1921,7 +1921,7 @@ ul {
 }
 
 .slider-card {
-  padding: 100px 0 calc((100vw - 1320px) / 2 + 20px) 100px;
+  padding: 100px 0 100px calc((100vw - 1320px) / 2 + 20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2062,10 +2062,11 @@ ul {
 @media screen and (max-width: 991px) {
   .slider-card {
     padding-left: 20px;
+    padding-bottom: 60px;
   }
   .slider-card-text {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   .slider-card-text__en {
     font-size: 40px;
@@ -2085,7 +2086,7 @@ ul {
 }
 
 .product-cards {
-  padding: 100px 0 200px;
+  padding-bottom: 200px;
 }
 
 .product-cards .row {
@@ -2222,6 +2223,9 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .product-cards {
+    padding-bottom: 120px;
+  }
   .product-cards-item {
     padding: 12px;
     -webkit-box-align: start;
@@ -2289,6 +2293,9 @@ ul {
 }
 
 @media screen and (max-width: 991px) {
+  .scada-intro {
+    padding: 40px 20px;
+  }
   .scada-intro-title {
     font-size: 32px;
   }
@@ -2338,7 +2345,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .challenge {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .challenge__title {
     font-size: 36px;
@@ -2469,7 +2476,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .monitor {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .monitor-item {
     margin-bottom: 32px;
@@ -2538,7 +2545,7 @@ ul {
 
 @media screen and (max-width: 991px) {
   .safe {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .safe .inner-title {
     text-align: center;
@@ -2604,6 +2611,9 @@ ul {
 }
 
 @media screen and (max-width: 991px) {
+  .visialization {
+    padding: 40px 0;
+  }
   .visialization-swiper {
     width: 100%;
     position: static;
@@ -2723,7 +2733,7 @@ ul {
 
 @media screen and (max-width: 991px) {
   .feat {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .feat_list {
     padding-top: 30px;

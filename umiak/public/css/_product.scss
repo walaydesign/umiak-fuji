@@ -176,7 +176,7 @@
 }
 
 .slider-card {
-  padding: 100px 0 calc((100vw - 1320px) / 2 + 20px) 100px;
+  padding: 100px 0 100px calc((100vw - 1320px) / 2 + 20px);
   display: flex;
   flex-wrap: wrap;
   &-text {
@@ -275,9 +275,10 @@
   }
   @media screen and (max-width: 991px) {
     padding-left: 20px;
+    padding-bottom: 60px;
     &-text {
       width: 100%;
-      margin-bottom: 80px;
+      margin-bottom: 40px;
       &__en {
         font-size: 40px;
         br {
@@ -298,7 +299,7 @@
 }
 
 .product-cards {
-  padding: 100px 0 200px;
+  padding-bottom: 200px;
   .row {
     margin: 0;
     > div {
@@ -400,6 +401,7 @@
     }
   }
   @media screen and (max-width: 767px) {
+    padding-bottom: 120px;
     &-item {
       padding: 12px;
       align-items: flex-start;
@@ -463,6 +465,7 @@
     font-size: 18px;
   }
   @media screen and (max-width: 991px) {
+    padding: 40px 20px;
     &-title {
       font-size: 32px;
     }
@@ -505,7 +508,7 @@
     color: $primary-100;
   }
   @media screen and (max-width: 767px) {
-    padding: 60px 0;
+    padding: 40px 0;
     &__title {
       font-size: 36px;
     }
@@ -610,7 +613,7 @@
     }
   }
   @media screen and (max-width: 767px) {
-    padding: 60px 0;
+    padding: 40px 0;
     &-item {
       margin-bottom: 32px;
       height: auto;
@@ -665,7 +668,7 @@
     }
   }
   @media screen and (max-width: 991px) {
-    padding: 60px 0;
+    padding: 40px 0;
     .inner-title {
       text-align: center;
       &::after {
@@ -717,6 +720,7 @@
     gap: 24px;
   }
   @media screen and (max-width: 991px) {
+    padding: 40px 0;
     &-swiper {
       width: 100%;
       position: static;
@@ -815,7 +819,7 @@
     }
   }
   @media screen and (max-width: 991px) {
-    padding: 60px 0;
+    padding: 40px 0;
     &_list {
       padding-top: 30px;
       li {
