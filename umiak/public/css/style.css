@@ -385,6 +385,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  position: relative;
 }
 
 .header-contact {
@@ -1123,6 +1124,33 @@ ul {
   border-left: 4px solid #f6ab00;
 }
 
+.banner-text__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.banner-text__right .btn-electric {
+  margin: 0;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.banner-text__right .breadcrumb {
+  margin: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 .banner-text .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1269,6 +1297,26 @@ ul {
   -webkit-transform: translate(-50%, -50%) skewX(-15deg);
           transform: translate(-50%, -50%) skewX(-15deg);
   z-index: -1;
+}
+
+.modal-content {
+  background-color: #002f4a;
+  border: 0;
+  border-radius: 20px;
+}
+
+.modal-header {
+  padding: 24px 24px 12px;
+  border: 0;
+  padding: 24px 24px 0;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.modal-dialog {
+  margin: 24px;
 }
 
 .home-bg {
@@ -2907,11 +2955,18 @@ ul {
   width: 15px;
 }
 
-.map-btn:hover .map-btn-inner {
-  width: 100%;
-  height: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.map-btn:hover .map-btn-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.map-btn:hover .map-btn-name {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .map-btn-name {
@@ -3029,6 +3084,149 @@ ul {
     width: 13px;
     height: 13px;
   }
+}
+
+.btn-electric {
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  margin-left: auto;
+  margin-bottom: 20px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+}
+
+.btn-electric:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.electric-section {
+  margin-bottom: 40px;
+}
+
+.electric-section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6eb6df;
+  margin-bottom: 4px;
+}
+
+.electric-section:last-child {
+  margin-bottom: 0;
+}
+
+.electric-name {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.electric-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.electric-info li {
+  font-size: 14px;
+  color: rgba(255, 252, 255, 0.7);
+  font-weight: 400px;
+  padding: 0 8px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.electric-info li::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.electric-info li:first-child {
+  padding-left: 0;
+}
+
+.electric-info li:last-child {
+  padding-right: 0;
+}
+
+.electric-info li:last-child::after {
+  display: none;
+}
+
+.electric-item {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.electric-item__text {
+  width: calc(100% - 32px);
+  padding-right: 16px;
+}
+
+.electric-item__icon {
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.electric-item__icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.electric-item__icon svg path {
+  fill: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.electric-item:hover {
+  color: #4099cb;
+}
+
+.electric-item:hover li {
+  color: #4099cb;
+}
+
+.electric-item:hover .electric-item__icon {
+  border-color: #4099cb;
+}
+
+.electric-item:hover .electric-item__icon svg path {
+  fill: #4099cb;
 }
 
 .pic-text__wrapper {

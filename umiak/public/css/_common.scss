@@ -467,15 +467,13 @@ ul {
   height: 195px;
 }
 
-#header {
-}
-
 .header {
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    position: relative;
   }
   &-contact {
     background-color: $secondary-500;
@@ -1065,6 +1063,20 @@ ul {
       padding-left: 24px;
       border-left: 4px solid $secondary-500;
     }
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .btn-electric {
+        margin: 0;
+        order: 2;
+      }
+      .breadcrumb {
+        margin: 0;
+        order: 1;
+      }
+    }
     .container {
       display: flex;
       align-items: flex-end;
@@ -1182,5 +1194,24 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%) skewX(-15deg);
     z-index: -1;
+  }
+}
+
+.modal {
+  &-content {
+    background-color: $primary-900;
+    border: 0;
+    border-radius: 20px;
+  }
+  &-header {
+    padding: 24px 24px 12px;
+    border: 0;
+    padding: 24px 24px 0;
+  }
+  &-body {
+    padding: 24px;
+  }
+  &-dialog {
+    margin: 24px;
   }
 }

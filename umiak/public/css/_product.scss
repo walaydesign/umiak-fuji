@@ -955,10 +955,17 @@
     }
   }
   &:hover {
-    .map-btn-inner {
-      width: 100%;
-      height: 100%;
-      box-shadow: none;
+    .map-btn {
+      &-wrapper {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.5);
+      }
+      &-name {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%);
+      }
     }
   }
   &-name {
@@ -1057,6 +1064,114 @@
       &::after {
         width: 13px;
         height: 13px;
+      }
+    }
+  }
+}
+
+.btn-electric {
+  padding: 6px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid $white;
+  margin-left: auto;
+  margin-bottom: 20px;
+  display: block;
+  width: fit-content;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    border-color: $white;
+  }
+}
+
+.electric {
+  &-section {
+    margin-bottom: 40px;
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: $primary-400;
+      margin-bottom: 4px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &-name {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  &-info {
+    display: flex;
+    align-items: center;
+    li {
+      font-size: 14px;
+      color: rgba(255,252,255,0.7);
+      font-weight: 400px;
+      padding: 0 8px;
+      position: relative;
+      transition: $transition;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 12px;
+        background-color: rgba(255,255,255,0.2);
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  &-item {
+    padding: 16px 0;
+    border-bottom: 1px solid $white-15;
+    display: flex;
+    align-items: center;
+    &__text {
+      width: calc(100% - 32px);
+      padding-right: 16px;
+    }
+    &__icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid $white-30;
+      transition: $transition;
+      svg {
+        width: 16px;
+        height: 16px;
+        path {
+          fill: $white;
+      transition: $transition;
+        }
+      }
+    }
+    &:hover {
+      color: $primary-500;
+      li {
+        color: $primary-500;
+      }
+      .electric-item__icon {
+        border-color: $primary-500;
+        svg {
+          path {
+            fill: $primary-500;
+          }
+        }
       }
     }
   }
