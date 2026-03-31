@@ -894,6 +894,9 @@
         justify-content: space-between;
       }
     }
+    >div {
+      margin-bottom: 40px;
+    }
   }
   @media screen and (max-width: 767px) {
    padding-bottom: 60px;

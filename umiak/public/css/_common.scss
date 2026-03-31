@@ -1063,20 +1063,6 @@ ul {
       padding-left: 24px;
       border-left: 4px solid $secondary-500;
     }
-    &__right {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      .btn-electric {
-        margin: 0;
-        order: 2;
-      }
-      .breadcrumb {
-        margin: 0;
-        order: 1;
-      }
-    }
     .container {
       display: flex;
       align-items: flex-end;
@@ -1111,6 +1097,20 @@ ul {
       &__wrapper {
         padding-left: 16px;
       }
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .btn-electric {
+        margin: 0;
+        order: 2;
+      }
+      .breadcrumb {
+        margin: 0;
+        order: 1;
+      }
+    }
     }
   }
   @media screen and (max-width: 575px) {
