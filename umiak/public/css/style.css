@@ -2912,6 +2912,7 @@ ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 0;
+  z-index: 0;
 }
 
 .map-btn-wrapper {
@@ -2955,13 +2956,8 @@ ul {
 
 .map-btn-inner img {
   width: 15px;
-}
-
-.map-btn:hover .map-btn-wrapper {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .map-btn:hover .map-btn-name {
@@ -2971,14 +2967,22 @@ ul {
           transform: translateX(-50%);
 }
 
+.map-btn:hover .map-btn-inner {
+  width: 40px;
+  height: 40px;
+}
+
+.map-btn:hover .map-btn-inner img {
+  width: 20px;
+}
+
 .map-btn-name {
   position: absolute;
   padding: 8px 16px;
-  background-color: #f6ab00;
   border-radius: 8px;
   white-space: nowrap;
   left: 50%;
-  bottom: 20px;
+  bottom: 50px;
   font-weight: 500;
   margin: 0;
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
@@ -2987,23 +2991,26 @@ ul {
   transition: 0.3s;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: translate(-50%, 50px);
-          transform: translate(-50%, 50px);
+  -webkit-transform: translate(-50%, 80px);
+          transform: translate(-50%, 80px);
+  font-size: 12px;
+  background-color: #2c2c2c;
+  z-index: -1;
 }
 
 .map-btn-name::after {
   position: absolute;
   content: "";
-  width: 13px;
-  height: 13px;
-  background-image: url(../img/triangle.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 0;
+  height: 0;
+  border-width: 7px;
+  border-color: #2c2c2c transparent transparent transparent;
+  border-style: solid;
   left: 50%;
-  bottom: -10px;
+  bottom: -14px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  opacity: 0;
 }
 
 .map-btn.active .map-btn-wrapper {
@@ -3018,6 +3025,14 @@ ul {
   visibility: visible;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 18px;
+  background-color: #f6ab00;
+}
+
+.map-btn.active .map-btn-name::after {
+  opacity: 1;
+  border-color: #f6ab00 transparent transparent transparent;
 }
 
 .map-btn[data-product="#transformer"] {

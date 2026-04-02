@@ -894,12 +894,12 @@
         justify-content: space-between;
       }
     }
-    >div {
+    > div {
       margin-bottom: 40px;
     }
   }
   @media screen and (max-width: 767px) {
-   padding-bottom: 60px;
+    padding-bottom: 60px;
     .nav-tabs {
       .nav-item {
         width: 50%;
@@ -929,6 +929,7 @@
   height: 40px;
   transform: translate(-50%, -50%);
   padding: 0;
+  z-index: 0;
   &-wrapper {
     width: 40px;
     height: 40px;
@@ -955,49 +956,56 @@
     transition: $transition;
     img {
       width: 15px;
+      transition: $transition;
     }
   }
   &:hover {
     .map-btn {
-      &-wrapper {
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(0.5);
-      }
       &-name {
         opacity: 1;
         visibility: visible;
         transform: translateX(-50%);
+      }
+      &-inner {
+        width: 40px;
+        height: 40px;
+        img {
+          width: 20px;
+        }
       }
     }
   }
   &-name {
     position: absolute;
     padding: 8px 16px;
-    background-color: $secondary-500;
     border-radius: 8px;
     white-space: nowrap;
     left: 50%;
-    bottom: 20px;
+    bottom: 50px;
     font-weight: 500;
     margin: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     transition: $transition;
     opacity: 0;
     visibility: hidden;
-    transform: translate(-50%, 50px);
+    transform: translate(-50%, 80px);
+
+    font-size: 12px;
+    background-color: $gray-950;
+    z-index: -1;
     &::after {
       position: absolute;
       content: "";
-      width: 13px;
-      height: 13px;
-      background-image: url(../img/triangle.svg);
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+      width: 0;
+      height: 0;
+      border-width: 7px;
+      border-color: $gray-950 transparent transparent transparent;
+      border-style: solid;
       left: 50%;
-      bottom: -10px;
+      bottom: -14px;
       transform: translateX(-50%);
+
+      opacity: 0;
     }
   }
   &.active {
@@ -1011,6 +1019,13 @@
         opacity: 1;
         visibility: visible;
         transform: translateX(-50%);
+        bottom: 20px;
+        font-size: 18px;
+        background-color: $secondary-500;
+        &::after {
+          opacity: 1;
+          border-color: $secondary-500 transparent transparent transparent;
+        }
       }
     }
   }
@@ -1110,7 +1125,7 @@
     align-items: center;
     li {
       font-size: 14px;
-      color: rgba(255,252,255,0.7);
+      color: rgba(255, 252, 255, 0.7);
       font-weight: 400px;
       padding: 0 8px;
       position: relative;
@@ -1120,7 +1135,7 @@
         content: "";
         width: 1px;
         height: 12px;
-        background-color: rgba(255,255,255,0.2);
+        background-color: rgba(255, 255, 255, 0.2);
         top: 50%;
         right: 0;
         transform: translateY(-50%);
@@ -1159,7 +1174,7 @@
         height: 16px;
         path {
           fill: $white;
-      transition: $transition;
+          transition: $transition;
         }
       }
     }
