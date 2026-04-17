@@ -3095,11 +3095,20 @@ ul {
   }
   .map-btn-name {
     padding: 4px 12px;
-    font-size: 14px;
+    font-size: 12px !important;
   }
   .map-btn-name::after {
     width: 13px;
     height: 13px;
+  }
+  .map-btn[data-product="#dynamo"] .map-btn-name, .map-btn[data-product="#feeder"] .map-btn-name, .map-btn[data-product="#internet"] .map-btn-name {
+    bottom: inherit;
+    top: 20px;
+  }
+  .map-btn[data-product="#dynamo"] .map-btn-name::after, .map-btn[data-product="#feeder"] .map-btn-name::after, .map-btn[data-product="#internet"] .map-btn-name::after {
+    bottom: inherit;
+    top: -14px;
+    border-color: transparent transparent #f6ab00 transparent;
   }
 }
 

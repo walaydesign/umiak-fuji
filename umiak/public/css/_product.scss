@@ -1078,10 +1078,21 @@
     }
     &-name {
       padding: 4px 12px;
-      font-size: 14px;
+      font-size: 12px !important;
       &::after {
         width: 13px;
         height: 13px;
+      }
+    }
+    &[data-product="#dynamo"], &[data-product="#feeder"], &[data-product="#internet"] {
+      .map-btn-name {
+        bottom: inherit;
+        top: 20px;
+        &::after {
+          bottom: inherit;
+          top: -14px;
+          border-color: transparent transparent $secondary-500 transparent;
+        }
       }
     }
   }
