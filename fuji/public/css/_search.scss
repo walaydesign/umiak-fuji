@@ -1,0 +1,70 @@
+.search {
+    padding: 100px 0;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    border: 1px solid $primary-700;
+    transition: $transition;
+    background-color: $primary-800;
+    margin-top: 12px;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__input {
+      transition: $transition;
+      padding-left: 16px;
+      display: flex;
+      align-items: center;
+      input {
+        height: 100%;
+        width: 400px;
+        color: #fff;
+      }
+    }
+    &__close {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      span {
+        font-size: 20px;
+        opacity: 0.8;
+        transition: $transition;
+      }
+      &:hover {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+    &__search {
+      height: 48px;
+      width: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-size: 24px;
+      }
+      &:hover {
+        span {
+          &::before {
+            color: $primary-400;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 575px) {
+        width: 100%;
+        &__input {
+            width: calc(100% - 48px);
+            input {
+                width: 100%;
+            }
+        }
+    }
+  }
