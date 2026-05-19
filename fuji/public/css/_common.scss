@@ -737,6 +737,7 @@ ul {
     border: 1px solid transparent;
     transition: $transition;
     width: 48px;
+    position: relative;
     button {
       display: flex;
       align-items: center;
@@ -746,7 +747,7 @@ ul {
       width: 0;
       overflow: hidden;
       transition: $transition;
-      padding-left: 16px;
+      // padding-left: 16px;
       display: flex;
       align-items: center;
       input {
@@ -786,6 +787,12 @@ ul {
           }
         }
       }
+      &.for-searching {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+      }
     }
   }
   &.searching {
@@ -795,6 +802,15 @@ ul {
         width: 278px;
         &__input {
           width: 230px;
+          padding-left: 16px;
+        }
+        &__search {
+          &.for-searching {
+            display: flex;
+          }
+          &:not(.for-searching) {
+            display: none;
+          }
         }
       }
       &-nav {

@@ -759,6 +759,7 @@ ul {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 48px;
+  position: relative;
 }
 
 .header-searchbar button {
@@ -778,7 +779,6 @@ ul {
   overflow: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding-left: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -832,6 +832,13 @@ ul {
   color: #6eb6df;
 }
 
+.header-searchbar__search.for-searching {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
 .header.searching .header-searchbar {
   border-color: #fff;
   width: 278px;
@@ -839,6 +846,17 @@ ul {
 
 .header.searching .header-searchbar__input {
   width: 230px;
+  padding-left: 16px;
+}
+
+.header.searching .header-searchbar__search.for-searching {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header.searching .header-searchbar__search:not(.for-searching) {
+  display: none;
 }
 
 .header.searching .header-nav__list {
