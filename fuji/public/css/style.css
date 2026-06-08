@@ -1011,16 +1011,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 28px;
-          column-gap: 28px;
-  row-gap: 12px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 28px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 12px;
+  margin-bottom: 40px;
 }
 
 .footer-nav ul li {
@@ -1030,55 +1026,34 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 80px;
 }
 
 .footer-nav ul li a {
   font: 400 18px "noto sans TC", sans-serif;
   color: #fff;
-  white-space: nowrap;
-  padding: 8px 0;
 }
 
 .footer-nav ul li a:hover {
   color: #a1d6f4;
 }
 
-.footer-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 44px;
+.footer-contact-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #a1d6f4;
 }
 
 .footer-contact-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-  gap: 16px;
+  margin-bottom: 12px;
+  gap: 8px;
 }
 
 .footer-contact-item:last-child {
   margin-bottom: 0;
-}
-
-.footer-contact-item__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #fff;
 }
 
 .footer-contact-item__icon span {
@@ -1143,11 +1118,7 @@ ul {
     width: 40%;
   }
   .footer-nav ul {
-    -webkit-column-gap: 16px;
-            column-gap: 16px;
-    row-gap: 4px;
-    border-bottom: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    gap: 16px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1184,6 +1155,7 @@ ul {
   }
   .footer-contact {
     width: 100%;
+    margin-bottom: 40px;
   }
   .footer-contact-item > p {
     font-size: 16px;
@@ -1192,7 +1164,7 @@ ul {
     width: 100%;
   }
   .footer-nav ul {
-    padding: 0;
+    padding-bottom: 16px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
@@ -1200,7 +1172,6 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    border: 0;
   }
   .footer-nav ul li {
     width: 45%;

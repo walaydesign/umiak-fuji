@@ -818,11 +818,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 28px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 40px;
 }
 
 .footer-nav ul li {
@@ -843,42 +844,22 @@ ul {
   color: #a1d6f4;
 }
 
-.footer-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 44px;
+.footer-contact-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #a1d6f4;
 }
 
 .footer-contact-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-  gap: 16px;
+  margin-bottom: 12px;
+  gap: 8px;
 }
 
 .footer-contact-item:last-child {
   margin-bottom: 0;
-}
-
-.footer-contact-item__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #fff;
 }
 
 .footer-contact-item__icon span {
@@ -944,8 +925,6 @@ ul {
   }
   .footer-nav ul {
     gap: 16px;
-    border-bottom: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -982,6 +961,7 @@ ul {
   }
   .footer-contact {
     width: 100%;
+    margin-bottom: 40px;
   }
   .footer-contact-item > p {
     font-size: 16px;
@@ -990,7 +970,7 @@ ul {
     width: 100%;
   }
   .footer-nav ul {
-    padding: 0;
+    padding-bottom: 16px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
@@ -998,7 +978,6 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    border: 0;
   }
   .footer-nav ul li {
     width: 45%;

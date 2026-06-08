@@ -965,20 +965,19 @@ ul {
     margin-bottom: 32px;
     ul {
       display: flex;
-      column-gap: 28px;
-      row-gap: 12px;
-      width: fit-content;
+      justify-content: center;
+      // flex-direction: column;
+      gap: 28px;
+      // width: fit-content;
       border-bottom: 1px solid $white-30;
-      flex-wrap: wrap;
-      padding-bottom: 12px;
+      margin-bottom: 40px;
       li {
         display: flex;
         align-items: center;
+        height: 80px;
         a {
           font: $body-3;
           color: $white;
-          white-space: nowrap;
-          padding: 8px 0;
           &:hover {
             color: $primary-300;
           }
@@ -987,24 +986,29 @@ ul {
     }
   }
   &-contact {
-    display: flex;
-    gap: 44px;
+    // display: flex;
+    // gap: 44px;
+    &-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: $primary-300;
+    }
     &-item {
       display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-      gap: 16px;
+      // align-items: center;
+      margin-bottom: 12px;
+      gap: 8px;
       &:last-child {
         margin-bottom: 0;
       }
       &__icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 1px solid $white;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // width: 40px;
+        // height: 40px;
+        // border-radius: 50%;
+        // border: 1px solid $white;
         span {
           font-size: 20px;
         }
@@ -1057,10 +1061,9 @@ ul {
     &-nav {
       width: 40%;
       ul {
-      column-gap: 16px;
-      row-gap: 4px;
-        border-bottom: 0;
-        border-left: 1px solid $white-30;
+        gap: 16px;
+        // border-bottom: 0;
+        // border-left: 1px solid $white-30;
         flex-direction: column;
         padding-left: 24px;
         li {
@@ -1088,6 +1091,7 @@ ul {
     }
     &-contact {
       width: 100%;
+      margin-bottom: 40px;
       &-item {
         > p {
           font-size: 16px;
@@ -1097,11 +1101,12 @@ ul {
     &-nav {
       width: 100%;
       ul {
-        padding: 0;
+        // padding: 0;
+        padding-bottom: 16px;
         flex-wrap: wrap;
         width: 100%;
         flex-direction: row;
-        border: 0;
+        // border: 0;
         li {
           width: 45%;
           a {
