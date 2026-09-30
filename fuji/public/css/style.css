@@ -1541,7 +1541,7 @@ ul {
 .banner {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  padding-bottom: 40%;
 }
 
 .banner__pic {
@@ -1589,7 +1589,7 @@ ul {
 
 @media screen and (max-width: 991px) {
   .banner {
-    padding-bottom: 120%;
+    padding-bottom: 100%;
   }
 }
 
