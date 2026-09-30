@@ -354,8 +354,8 @@ $home-banner-ratio-mobile: 120%;
     padding-bottom: 60%;
     position: relative;
     transition: $transition;
-    // filter: grayscale(1);
-    // opacity: 0.5;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
     > img {
       position: absolute;
       object-fit: contain;

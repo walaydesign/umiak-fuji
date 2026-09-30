@@ -1714,6 +1714,9 @@ ul {
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  opacity: 0.9;
 }
 
 .gallery-item > img {
